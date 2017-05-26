@@ -1,123 +1,48 @@
+# _Eliot, Say "Bookstore"_
 
-CONTENTS OF THIS FILE
----------------------
+#### _A bookstore website, 5/26/17_
 
- * About Drupal
- * Configuration and features
- * Installation profiles
- * Appearance
- * Developing for Drupal
+#### By _**Eliot Carlsen**_
 
-ABOUT DRUPAL
-------------
+## Description
+_Drupal Site using PHP and Drupal features and themes_
+_Project has 2 basic pages - an "About" page, and a "Locations" page_
+_Project has a Contact module. Includes a Contact form with a "Contact" link in the main menu. Anyone, regardless of their user role, can use the form to send me website feedback_
+_Project uses Views module, the Features module and the Strongarm module, and all their dependencies._
+_Project has a feature called "Site Configuration". The feature tracks the strongarm variables site_name, site_slogan, theme_default and site_frontpage (The URL for the page displayed as your frontpage)._
+_Project has a "Book Review" custom content type. The title field is labelled "Book Title". It also includes fields for "Book Author", "Rating", and "Review Body"._
+_The "Book Title", "Book Author", "Rating", and "Review Body" fields are required._
+_The is chosen with either a menu or radio buttons._
+_The fields are in the order "Book Title", "Book Author", "Rating", then "Review Body" when you fill out the form to add an instance of the book review content type._
+_Project has a feature called "Book Review" for the content type._
+Project has a view for the Book Review content type called "New Books". This block displays the 3 newest book reviews as an unformatted list of linked titles, so that users can click on the title of a new book to go read the review of it._
+_Project has a custom "Reviewer" role. The Reviewer role has all the same permissions as an authenticated user, and also is able to create new book reviews. They are able to edit and delete their own book reviews, but not anyone else's._
+_Project displays  a special coupon as a block on the front page which is visible to authenticated users and not anonymous users. It says "This week: use this coupon code to get 25% off on all Science Fiction!"_
 
-Drupal is an open source content management platform supporting a variety of
-websites ranging from personal weblogs to large community-driven websites. For
-more information, see the Drupal website at http://drupal.org/, and join the
-Drupal community at http://drupal.org/community.
+## Setup/Installation Requirements
 
-Legal information about Drupal:
- * Know your rights when using Drupal:
-   See LICENSE.txt in the same directory as this document.
- * Learn about the Drupal trademark and logo policy:
-   http://drupal.com/trademark
+* _git clone this project to your desktop_
+* _open MAMP or LAMP on your computer and point the server to the top level of the project folder_
+* _start the server and open up the localhost page_
+* _export zip database file to the mySQL server_
+* _create the database user using the name and password settings in the settings.php file_
 
-CONFIGURATION AND FEATURES
---------------------------
 
-Drupal core (what you get when you download and extract a drupal-x.y.tar.gz or
-drupal-x.y.zip file from http://drupal.org/project/drupal) has what you need to
-get started with your website. It includes several modules (extensions that add
-functionality) for common website features, such as managing content, user
-accounts, image uploading, and search. Core comes with many options that allow
-site-specific configuration. In addition to the core modules, there are
-thousands of contributed modules (for functionality not included with Drupal
-core) available for download.
+## Known Bugs
 
-More about configuration:
- * Install, upgrade, and maintain Drupal:
-   See INSTALL.txt and UPGRADE.txt in the same directory as this document.
- * Learn about how to use Drupal to create your site:
-   http://drupal.org/documentation
- * Download contributed modules to sites/all/modules to extend Drupal's
-   functionality:
-   http://drupal.org/project/modules
- * See also: "Developing for Drupal" for writing your own modules, below.
+_None_
 
-INSTALLATION PROFILES
----------------------
+## Support and contact details
 
-Installation profiles define additional steps (such as enabling modules,
-defining content types, etc.) that run after the base installation provided
-by core when Drupal is first installed. There are two basic installation
-profiles provided with Drupal core.
+_eliot.carlsen@gmail.com_
 
-Installation profiles from the Drupal community modify the installation process
-to provide a website for a specific use case, such as a CMS for media
-publishers, a web-based project tracking tool, or a full-fledged CRM for
-non-profit organizations raising money and accepting donations. They can be
-distributed as bare installation profiles or as "distributions". Distributions
-include Drupal core, the installation profile, and all other required
-extensions, such as contributed and custom modules, themes, and third-party
-libraries. Bare installation profiles require you to download Drupal Core and
-the required extensions separately; place the downloaded profile in the
-/profiles directory before you start the installation process. Note that the
-contents of this directory may be overwritten during updates of Drupal core;
-it is advised to keep code backups or use a version control system.
+## Technologies Used
 
-Additionally, modules and themes may be placed inside subdirectories in a
-specific installation profile such as profiles/your_site_profile/modules and
-profiles/your_site_profile/themes respectively to restrict their usage to only
-sites that were installed with that specific profile.
+_Drupal_
+_PHP_
 
-More about installation profiles and distributions:
- * Read about the difference between installation profiles and distributions:
-   http://drupal.org/node/1089736
- * Download contributed installation profiles and distributions:
-   http://drupal.org/project/distributions
- * Develop your own installation profile or distribution:
-   http://drupal.org/developing/distributions
+### License
 
-APPEARANCE
-----------
+*MIT License*
 
-In Drupal, the appearance of your site is set by the theme (themes are
-extensions that set fonts, colors, and layout). Drupal core comes with several
-themes. More themes are available for download, and you can also create your own
-custom theme.
-
-More about themes:
- * Download contributed themes to sites/all/themes to modify Drupal's
-   appearance:
-   http://drupal.org/project/themes
- * Develop your own theme:
-   http://drupal.org/documentation/theme
-
-DEVELOPING FOR DRUPAL
----------------------
-
-Drupal contains an extensive API that allows you to add to and modify the
-functionality of your site. The API consists of "hooks", which allow modules to
-react to system events and customize Drupal's behavior, and functions that
-standardize common operations such as database queries and form generation. The
-flexible hook architecture means that you should never need to directly modify
-the files that come with Drupal core to achieve the functionality you want;
-instead, functionality modifications take the form of modules.
-
-When you need new functionality for your Drupal site, search for existing
-contributed modules. If you find a module that matches except for a bug or an
-additional needed feature, change the module and contribute your improvements
-back to the project in the form of a "patch". Create new custom modules only
-when nothing existing comes close to what you need.
-
-More about developing:
- * Search for existing contributed modules:
-   http://drupal.org/project/modules
- * Contribute a patch:
-   http://drupal.org/patch/submit
- * Develop your own module:
-   http://drupal.org/developing/modules
- * Follow best practices:
-   http://drupal.org/best-practices
- * Refer to the API documentation:
-   http://api.drupal.org/api/drupal/7
+Copyright (c) 2016 **_Eliot Carlsen_**
